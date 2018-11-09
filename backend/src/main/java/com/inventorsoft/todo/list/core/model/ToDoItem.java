@@ -34,7 +34,7 @@ public class ToDoItem {
     private String description;
 
     @ValidEventTime
-    @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
+    @JsonFormat(pattern = "MM/dd/yyyy HH:mm")
     private LocalDateTime eventTime;
 
 
