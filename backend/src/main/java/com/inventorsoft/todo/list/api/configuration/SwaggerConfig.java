@@ -1,4 +1,4 @@
-package main.java.com.inventorsoft.todo.list.api.configuration;
+package com.inventorsoft.todo.list.api.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
