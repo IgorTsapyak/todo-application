@@ -32,3 +32,6 @@ src/main/resources/static/
 src/main/resources/templates/
 src/test/
 target/
+**/node_modules
+**/dist
+**/package-lock.json
