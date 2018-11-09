@@ -1,0 +1,9 @@
+.todo-modal {
+    &__title {
+        text-align: center;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+}
