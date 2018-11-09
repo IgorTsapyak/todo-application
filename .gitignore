@@ -27,3 +27,8 @@ mvnw.cmd
 /dist/
 /nbdist/
 /.nb-gradle/
+.gitignore
+src/main/resources/static/
+src/main/resources/templates/
+src/test/
+target/

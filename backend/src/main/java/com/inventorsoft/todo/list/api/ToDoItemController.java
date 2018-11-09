@@ -4,7 +4,6 @@ import com.inventorsoft.todo.list.core.model.DeleteToDosWrapper;
 import com.inventorsoft.todo.list.core.model.ToDoItem;
 import com.inventorsoft.todo.list.core.service.ToDoItemService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;

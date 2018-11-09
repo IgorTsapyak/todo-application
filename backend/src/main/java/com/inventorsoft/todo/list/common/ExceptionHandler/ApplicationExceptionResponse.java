@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 @Value
-public class ApplicationErrorResponse {
+public class ApplicationExceptionResponse {
 
     private String message;
 

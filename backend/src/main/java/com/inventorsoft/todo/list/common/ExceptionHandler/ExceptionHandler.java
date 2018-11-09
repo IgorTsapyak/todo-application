@@ -29,6 +29,6 @@ public class ExceptionHandler extends ResponseEntityExceptionHandler {
         final BindingResult bindingResult = ex.getBindingResult();
         final Map<String, List<String>> errorsGrouped = bindingResult.getFieldErrors().stream()
                 .collect(Collectors.groupingBy(FieldError::getField, Collectors.mapping(FieldError::getDefaultMessage, Collectors.toList())));
-        return ResponseEntity.badRequest().body(new ApplicationErrorResponse(VALIDATION_ERROR, errorsGrouped));
+        return ResponseEntity.badRequest().body(new ApplicationExceptionResponse(VALIDATION_ERROR, errorsGrouped));
     }
 }
