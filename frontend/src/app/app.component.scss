@@ -1,0 +1,47 @@
+.todo {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        max-width: 500px;
+        font-size: 40px;
+        width: 100%;
+        > :first-child {
+            text-align: center;
+        }
+        &-actions {
+            font-size: 16px;
+            padding: 0 0 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__body {
+        max-width: 500px;
+        width: 100%;
+        .accordion-title {
+            height: 20px;
+            > :last-child {
+                margin-left: 8px;
+            }
+        }
+        .accordion-description {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+            .mat-icon {
+                font-size: 18px;
+                height: 18px;
+                width: 18px;
+            }
+        }
+    }
+}
+
+::ng-deep .mat-expansion-panel-header > .mat-content {
+    overflow: visible;
+}

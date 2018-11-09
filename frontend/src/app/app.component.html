@@ -1,0 +1,53 @@
+<div class="todo">
+    <div class="todo__title">
+        <div>
+            Todo list
+        </div>
+        <div class="todo__title-actions">
+            <mat-checkbox [checked]="isAllChecked"
+                          (change)="onCheckAll($event)"
+                          [disabled]="!todos.length">
+                Check all
+            </mat-checkbox>
+            <div>
+                <button mat-icon-button
+                        (click)="deleteTodo()"
+                        [disabled]="isAnyTodoChecked()">
+                    <mat-icon>
+                        delete
+                    </mat-icon>
+                </button>
+                <button mat-icon-button (click)="openDialog()">
+                    <mat-icon>
+                        add_circle_outline
+                    </mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="todo__body">
+        <mat-accordion>
+            <mat-expansion-panel *ngFor="let todo of todos">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="accordion-title">
+                        <mat-checkbox [checked]="isTodoChecked(todo.id)"
+                                      (click)="$event.stopPropagation()"
+                                      (change)="onTodoCheck($event, todo)"
+                        ></mat-checkbox>
+                        <span>{{todo.title}}</span>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        <div class="accordion-description">
+                            <span>{{todo.eventTime | date:'MM/dd/yyyy'}}</span>
+                            <mat-icon (click)="openEdit($event, todo)">edit</mat-icon>
+                        </div>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                    {{todo.description}}
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+    </div>
+</div>
