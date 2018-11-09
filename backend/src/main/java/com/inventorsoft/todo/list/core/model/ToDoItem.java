@@ -13,6 +13,9 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
 
+/**
+ * POJO with the data which is related to the to do items.
+ */
 @Getter
 @Setter
 @Entity

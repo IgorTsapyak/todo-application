@@ -20,6 +20,9 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 import java.util.List;
 
+/**
+ * Handles requests related to "/todos" mapping, provides crud options as a REST API
+ */
 @RequestMapping("/todos")
 @RestController
 @RequiredArgsConstructor

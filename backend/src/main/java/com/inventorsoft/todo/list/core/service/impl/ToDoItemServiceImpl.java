@@ -9,6 +9,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+/**
+ * {@inheritDoc}
+ */
 @Service
 @RequiredArgsConstructor
 public class ToDoItemServiceImpl implements ToDoItemService {

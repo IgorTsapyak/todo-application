@@ -14,6 +14,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * Class which is responsible for application Exception handling and processing. As for example only one
+ * type of the exception was handled - {@link MethodArgumentNotValidException}.
+ */
 @ControllerAdvice
 public class ExceptionHandler extends ResponseEntityExceptionHandler {
 
